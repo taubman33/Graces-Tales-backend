@@ -16,6 +16,7 @@ class Book(models.Model):
     genre = models.CharField(max_length=50, default='no genre')
     summary = models.CharField(max_length=250, default='no summary')
     price = models.CharField(max_length=50, default='no price')
+    photo_url = models.CharField(max_length=250, default='no summary')
 
     def __str__(self):
         return self.title 
